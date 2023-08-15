@@ -1,0 +1,71 @@
+.video-title
+{
+    font-family: Arial, s, sans-serif  ;
+    font-size: 25px;
+    font-weight: bold;
+    width: 350px;
+    line-height: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.video-stats
+{
+    font-family: Arial, system-ui;
+    font-size: 14px;
+    color: #252f2f;
+    margin-top: 0;
+
+}
+
+.video-author
+{
+    font-family: Arial, serif;
+    font-size: 14px;
+    color: darkslategray;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.video-description
+{
+    font-family: Arial, serif;
+    font-size: 15px;
+    color: darkslategray;
+    width: 300px;
+    line-height: 22px;
+    margin-bottom: 100px;
+    padding: 20px;
+
+}
+.apple-text
+{
+    font-family: Arial, cursive;
+    font-size: 15px;
+    color: white;
+    line-height: 8px;
+    margin: 20px;
+    background-color: #d90505;
+    padding: 20px;
+}
+.text-underline:hover
+{
+    text-decoration-line: underline;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
