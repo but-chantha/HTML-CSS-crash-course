@@ -1,26 +1,81 @@
+body
+{
+    background-color: black;
+}
+
 .thumbnails
 {
-
-    width: 300px;
-    height: 190px;
-
-    /*object-fit: contain;*/
-    /*object-position: left;*/
-    /*border-width: 2px;*/
-    /*border-style: solid;*/
-
+    width: 400px;
+    height: 230px;
+    border-radius: 8px;
 
 }
 
 .Search-bar{
+    background-color: darkgrey;
     font-size: 20px;
-
     cursor: pointer;
     margin-left: 12px;
-
-
-
-
+    display: flex;
 }
 
 .video-title
+{
+    color: #c5baba;
+    width: 220px;
+    font-family: Arial, fantasy ;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+
+}
+
+.video-author
+{
+    font-size: 15px;
+    font-family: Arial, serif;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    color: #b0b0b0;
+
+}
+
+.video-stats
+{
+    color: #b0b0b0;
+    font-size: 15px;
+    font-family: Arial, serif;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.video-preview
+{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px;
+}
+
+.chanel-picture
+{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.profile-picture
+{
+    width: 60px;
+}
+
+.video-info
+{
+    display: inline-block;
+    width: 345px;
+}
