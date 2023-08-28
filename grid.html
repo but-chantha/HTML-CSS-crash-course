@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="grid.css">
+    <title>Grid Practice</title>
+</head>
+<body >
+
+<div class="divG1">
+
+    <div class="div1">
+        div 1
+    </div>
+    <div class="div2">
+        div 2
+        <p>
+            text
+        </p>
+    </div>
+</div>
+
+<div class="divG1">
+    <div class="div1">
+        100
+    </div>
+    <div class="div2">
+        100px
+        <p>
+            text
+        </p>
+    </div>
+    <div class="div3">
+        200px
+    </div>
+</div>
+
+<div    style="
+        display: grid;
+        grid-template-columns: 100px">
+    <div class="div2">
+        100px
+    </div>
+</div>
+
+
+<div  style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr">
+    <div class="div1">
+        100px
+    </div>
+    <div class="div2" >
+        1fr
+    </div>
+</div>
+
+<div class="divG2"
+     style="
+     margin-top: 30px;
+     display: grid;
+     grid-template-columns: 100px 1fr 2fr">
+
+    <div class="div1">
+        100px
+    </div>
+    <div class="div2" >
+        1fr
+    </div>
+    <div class="div3" >
+        2fr
+    </div>
+</div>
+
+<div
+        style="
+     margin-top: 30px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    ">
+
+    <div class="div1"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+    <div class="div2"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+    <div class="div3"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+    <div class="div2"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+    <div class="div3"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+    <div class="div2"
+         style="
+                height: 200px;">
+        1fr
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
