@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="margin-bottom: 400px">
+
+<p>
+    12a. Create a flexbox with 2 items. Widths = 200px | 75px
+</p>
+<div style="display: flex;
+            flex-direction: row; ">
+
+    <div style="background-color: lightblue;
+                width: 200px">200px</div>
+
+    <div style="background-color: lightpink;
+                width: 75px;"> 75px</div>
+</div>
+
+
+<p>
+    12b. A flexbox with 3 items, spread evenly across the page
+</p>
+
+<div style="display: flex;
+flex-direction: row">
+
+    <div style="background-color: lightblue;
+width: 50px;">item1 </div>
+
+    <div style="background-color: lightpink;flex: 1">item2 </div>
+
+    <div style="background-color: lightblue;width: 75px;"> item3</div>
+</div>
+
+
+<p>
+    12c. A flexbox with 4 items, spread evenly across the page
+</p>
+
+<div style="background-color: white;
+            border: 1px solid gray;
+            height: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;">
+
+    <div style="background-color: lightpink;width: 40px" >item1 </div>
+
+    <div style="background-color: lightpink;width: 40px" >item2 </div>
+
+    <div style="background-color: lightpink;width: 40px" >item3 </div>
+
+    <div style="background-color: lightpink;width: 40px" >item4 </div>
+
+</div>
+
+<p>12d. Create the flexbox below the height = 50px and a gray border</p>
+
+<div style="background-color: white ;
+            border: 1px solid gray;
+            display: flex;flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            margin-top: 30px" >
+
+    <div style="background-color: lightpink;width: 45px;">item1  </div>
+
+    <div style="background-color: lightpink;width: 45px;">item2  </div>
+</div>
+
+<p> 12e. Create this design</p>
+
+<div style="border: 1px solid grey ;
+            border-radius: 7px;
+            width: 400px">
+
+    <div style="
+                display: flex ;
+                flex-direction: row ;
+                justify-content: space-between ;
+                align-items: center;
+                margin: 10px 10px 10px 10px">
+        <div> Home </div>
+        <div style="background-color: blue;border: 1px solid #2e74a6;border-radius: 15px;padding: 5px 15px 5px 15px; color: white  ">14</div>
+    </div>
+
+    <div style="
+                display: flex ;
+                flex-direction: row ;
+                justify-content: space-between ;
+                align-items: center;
+                margin: 10px 10px 10px 10px">
+        <div> Notifications </div>
+        <div style="background-color: blue;border: 1px solid #2e74a6;border-radius: 15px;padding: 5px 14px 5px 14px; color: white ">3</div>
+    </div>
+
+    <div style="
+                display: flex ;
+                flex-direction: row ;
+                justify-content: space-between ;
+                align-items: center;
+                margin: 10px 10px 10px 10px">
+        <div> Messages </div>
+        <div style="background-color: blue;border: 1px solid #2e74a6;border-radius: 15px;padding: 5px 14px 5px 14px; color: white ">5</div>
+    </div>
+
+</div>
+
+<p>12f. Create this design</p>
+
+<div style="background-color: rebeccapurple;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center">
+
+    <div style="color: white;
+                margin: 0 0 0 15px ;
+                width: 100px">
+            Home </div>
+
+    <input placeholder="Search"
+           style="flex: 1;
+            border: #a0a0ec;
+            margin-right: 75px;
+            border-radius: 20px;
+            padding: 6px 20px;
+            " type="text">
+
+    <div style="
+                border: 1px solid white;
+                border-radius: 4px;
+                padding: 8px 15px 8px 15px;
+                color: white;
+                margin: 10px 15px 10px 0;
+                width: 70px" >
+                        Download </div>
+</div>
+
+
+
+<p>12g. Create this design </p>
+
+<div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center ;
+            width: 400px;
+            font: 14px Arial, Roboto, sans-serif;">
+
+    <img style=" width: 50px;height: 50px;
+                 border-radius: 50%;
+                 margin-right: 20px"
+         src="download.jpg" />
+
+    <div style="flex: 1;
+                line-height:5px;
+                margin-top: 15px;">
+            <strong>oliver </strong>
+            <p style=" color: #7a7777  "> the cat</p>
+            <p style=" color: #7a7777 "> Popular</p> </div>
+
+    <div style="border: 1px solid dodgerblue;
+                background-color: blue;
+                color: white;
+                padding: 8px 15px 8px 15px;
+                border-radius: 5px;">
+        <strong>Follow</strong> </div>
+</div>
+
+
+<div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center ;
+            width: 400px;
+            font: 14px Arial, Roboto, sans-serif;">
+
+    <img style=" width: 50px;height: 50px;
+                 border-radius: 50%;
+                 margin-right: 20px"
+            src="download (1).jpg" />
+    <div style="flex: 1;
+                line-height:5px;
+                margin-top: 15px;">
+        <strong>Mimi </strong>
+        <p style=" color: #7a7777  ">Sleepy Cat</p>
+        <p style=" color: #7a7777 "> Popular</p> </div>
+
+    <div style="border: 1px solid dodgerblue;
+                background-color: blue;
+                color: white;
+                padding: 8px 15px 8px 15px;
+                border-radius: 5px;">
+        <strong>Follow</strong> </div>
+</div>
+
+
+<div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center ;
+            width: 400px;
+            font: 14px Arial, Roboto, sans-serif;">
+
+    <img style="width: 55px ;height: 50px;
+                 border-radius: 50%;
+                 margin-right: 20px;"
+
+    src="download (3).jpg" />
+    <div style="flex: 1;
+                line-height:5px;
+                margin-top: 15px;">
+        <strong>Rex </strong>
+        <p style=" color: #7a7777  ">Happy GoldenDog</p>
+        <p style=" color: #7a7777 "> Popular</p> </div>
+
+    <div style="border: 1px solid dodgerblue;
+                background-color: blue;
+                color: white;
+                padding: 8px 15px 8px 15px;
+                border-radius: 5px;">
+        <strong>Follow</strong> </div>
+</div>
+
+
+
+
+</body>
+</html>

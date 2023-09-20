@@ -1,153 +1,615 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YouTube</title>
+    <script src="https://kit.fontawesome.com/de06db78d4.js " crossorigin="anonymous"></script>
     <link rel="stylesheet" href="youTube.css">
 </head>
 
 <body>
-    <label>
-        <input class="Search-bar" type="text" placeholder="Search">
-    </label>
-    <div class="video-grid" >
 
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail(1).webp" />
-            </div>
-
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" /></div>
-                <div class="video-info">
-                    <p class="video-title">
-                        EP 102-នាគដេក និងនាគលូនក្រោមជេីងគេ|ផតខាសវិភាគរឿងសាមកុក
-                    </p>
-                    <p class="video-author">
-                        វិភាគរឿងសាមកុក
-                    </p>
-                    <p class="video-stats">
-                        1k views &#183; 2hours ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail(2).webp" /> </div>
-
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/channel_profile(2).jpg" />
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Lana Del Rey Playlist #6
-                    </p>
-                    <p class="video-author">
-                        Sunday night
-                    </p>
-                    <p class="video-stats">
-                        6M views &#183; 2 years ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/hq720.webp" /> </div>
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/channel_profile(1).jpg"/> </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        2 Hours Of Ghibli Music Learning &#128276; Healing Ghibli Studio, BGM Relaxing Ghibli
-                    </p>
-                    <p class="video-author">
-                        Ghilbli Music
-                    </p>
-                    <p class="video-stats">
-                        96K views &#183; 1 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/hq720(1).webp" /> </div>
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/channels2_profile.jpg" /> </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        The Weeknd,JENNIE &Lily Rose Depp-One Of The Girls(1 HOUR LOOP)Lyrics
-                    </p>
-                    <p class="video-author">
-                        1 Hour
-                    </p>
-                    <p class="video-stats">
-                        270K views &#183; 1 month ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/hq720(3).webp" /> </div>
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/unnamed.jpg" /> </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        JavaScrip Full Course ( 2023 ) - Beginner to Pro-Part 1
-                    </p>
-                    <p class="video-author">
-                        SuperSimpleDev
-                    </p>
-                    <p class="video-stats">
-                        1.5M views &#183; 4 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview" >
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/hq720(2).webp" alt="" /></div>
-            <div class="video-info-grid">
-
-                <div class="chanel-picture">
-                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" alt="" /></div>
-                <div class="video-info">
-                    <p class="video-title">
-                        ក្មេងប្រុសបណ្ដាសារ " YUJI ITADORI" | JUJUTSU KAISEN | SATORU GOJO | RYOMEN SUKUNA | សម្រាយសាច់រឿង
-                    </p>
-                    <p class="video-author">
-                        SakdaMCU
-                    </p>
-                    <p class="video-stats">
-                        22k views &#183; 1 day ago
-                    </p>
-                </div>
-            </div>
-        </div>
-
+<header class="header">
+    <div class="left-section" >
+        <i class="hamburger-menu fa-solid fa-bars"></i>
+        <img class="youtube-logo" src="into-to-html/icon/download (3).png"  alt=""/>
     </div>
 
+    <div class="middle-section">
+         <input class="search-bar" type="text" placeholder="Search">
+        <button class=" search-button">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+                <i class="voice-search-icon fa-solid fa-microphone"></i>
+                <div class="tooltip">Search with your voice</div>
+        </button>
+    </div>
 
+    <div class="right-section">
+            <div class="shrink-bar"></div>
+        <button class="boxOf-video">
+            <i class="icon-video fa-solid fa-video"></i>
+            <div class="tooltip">Create</div>
+        </button>
+        <button class="boxOf-not">
+            <i class="icon-notification fa-regular fa-bell"></i>
+            <div class="not-count">12</div>
+            <div class="tooltip">Notification</div>
+        </button>
+        <button class="boxOf-channel">
+            <img class="user-profile" src="channel-picture/channel_profile(2).jpg" />
+        </button>
+    </div>
+</header>
+
+<nav class="sideBar">
+
+    <div class="sideBar-link">
+        <i class="icon fa-solid fa-house"></i>
+        <p class="p">Home</p>
+    </div>
+
+    <div class="sideBar-link">
+        <i class="icon fa-regular fa-compass"></i>
+        <p class="p">Explore</p>
+    </div>
+
+    <div class="sideBar-link">
+        <i class="icon fa-solid fa-tv"></i>
+        <p class="p">Subscription</p>
+    </div>
+
+    <div class="sideBar-link">
+        <i class="icon fa-brands fa-youtube"></i>
+        <p class="p">Originals</p>
+    </div>
+
+    <div class="sideBar-link">
+        <i class="icon fa-solid fa-bullseye"></i>
+        <p class="p">YouTube Music</p>
+    </div>
+
+    <div class="sideBar-link">
+        <i class="icon fa-solid fa-clapperboard"></i>
+        <p class="p">Library</p>
+    </div>
+</nav>
+
+
+<main>
+    <section class="video-grid" >
+        
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(1).webp" alt="" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" alt="" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg" alt="" />
+                        <div class="info">
+                            <p class="author-info">វិភាគរឿងសាមកុក</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                        <p class="video-title">EP 102-នាគដេក និងនាគលូនក្រោមជេីងគេ| ផតខាសវិភាគរឿងសាមកុក</p>
+                    </a>
+                    <p class="video-author">វិភាគរឿងសាមកុក</p>
+                    <p class="video-stats">1k views &#183; 2hours ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(2).webp" alt="" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(2).jpg" alt=""/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(2).jpg" alt="" />
+                        <div class="info">
+                            <p class="author-info">Sunday night</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                        <p class="video-title">Lana Del Rey Playlist #6</p>
+                    </a>
+                    <p class="video-author">Sunday night</p>
+                    <p class="video-stats">6M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720.webp" alt="" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(1).jpg" alt=""/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(1).jpg"  alt=""/>
+                        <div class="info">
+                            <p class="author-info">Ghilbli Music</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                        <p class="video-title">2 Hours Of Ghibli Music Learning &#128276;Healing Ghibli Studio, BGM Relaxing Ghibli</p>
+                    </a>
+                    <p class="video-author">Ghilbli Music</p>
+                    <p class="video-stats">96K views &#183; 1 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(1).webp" alt=""/>
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels2_profile.jpg" alt=""/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels2_profile.jpg"   alt=""/>
+                        <div class="info">
+                            <p class="author-info">1 Hour</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                        <p class="video-title">The Weeknd,JENNIE &Lily Rose Depp-One Of The Girls(1 HOUR LOOP)Lyrics</p>
+                    </a>
+                    <p class="video-author">1 Hour</p>
+                    <p class="video-stats">270K views &#183; 1 month ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(3).webp" alt=""/>
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/unnamed.jpg" alt=""/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/unnamed.jpg"  alt=""/>
+                        <div class="info">
+                            <p class="author-info">SuperSimpleDev</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                        <p class="video-title">JavaScrip Full Course ( 2023 )- Beginner to Pro-Part 1</p>
+                    </a>
+                    <p class="video-author"> SuperSimpleDev </p>
+                    <p class="video-stats">1.5M views &#183; 4 months ago </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(2).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg"  />
+                        <div class="info">
+                            <p class="author-info">SakdaMCU</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                        <p class="video-title">ក្មេងប្រុសបណ្ដាសារ " YUJI ITADORI" | JUJUTSU KAISEN | SATORU GOJO | RYOMEN SUKUNA | សម្រាយសាច់រឿង</p>
+                    </a>
+                    <p class="video-author">SakdaMCU</p>
+                    <p class="video-stats">22k views &#183; 1 day ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(1).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg" />
+                        <div class="info">
+                            <p class="author-info">វិភាគរឿងសាមកុក</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                        <p class="video-title">EP 102-នាគដេក និងនាគលូនក្រោមជេីងគេ| ផតខាសវិភាគរឿងសាមកុក</p>
+                    </a>
+                    <p class="video-author">វិភាគរឿងសាមកុក</p>
+                    <p class="video-stats">1k views &#183; 2hours ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(2).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(2).jpg" />
+
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(2).jpg"  />
+                        <div class="info">
+                            <p class="author-info">Sunday night</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                        <p class="video-title">Lana Del Rey Playlist #6</p>
+                    </a>
+                    <p class="video-author">Sunday night</p>
+                    <p class="video-stats">6M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720.webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(1).jpg"/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(1).jpg"  />
+                        <div class="info">
+                            <p class="author-info">Ghilbli Music</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                        <p class="video-title">2 Hours Of Ghibli Music Learning &#128276;Healing Ghibli Studio, BGM Relaxing Ghibli</p>
+                    </a>
+                    <p class="video-author">Ghilbli Music</p>
+                    <p class="video-stats">96K views &#183; 1 months ago</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(1).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels2_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels2_profile.jpg"   />
+                        <div class="info">
+                            <p class="author-info">1 Hour</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                        <p class="video-title">The Weeknd,JENNIE &Lily Rose Depp-One Of The Girls(1 HOUR LOOP)Lyrics</p>
+                    </a>
+                    <p class="video-author">1 Hour</p>
+                    <p class="video-stats">270K views &#183; 1 month ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(3).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/unnamed.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/unnamed.jpg"  />
+                        <div class="info">
+                            <p class="author-info">SuperSimpleDev</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                        <p class="video-title">JavaScrip Full Course ( 2023 )- Beginner to Pro-Part 1</p>
+                    </a>
+                    <p class="video-author"> SuperSimpleDev </p>
+                    <p class="video-stats">1.5M views &#183; 4 months ago </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(2).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg"  />
+                        <div class="info">
+                            <p class="author-info">SakdaMCU</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                        <p class="video-title">ក្មេងប្រុសបណ្ដាសារ " YUJI ITADORI" | JUJUTSU KAISEN | SATORU GOJO | RYOMEN SUKUNA | សម្រាយសាច់រឿង</p>
+                    </a>
+                    <p class="video-author">SakdaMCU</p>
+                    <p class="video-stats">22k views &#183; 1 day ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(1).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" />
+
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg" />
+                        <div class="info">
+                            <p class="author-info">វិភាគរឿងសាមកុក</p>
+                            <p >15M subscribers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ONXg86Wd4wc" target="_parent">
+                        <p class="video-title">EP 102-នាគដេក និងនាគលូនក្រោមជេីងគេ| ផតខាសវិភាគរឿងសាមកុក</p>
+                    </a>
+                    <p class="video-author">វិភាគរឿងសាមកុក</p>
+                    <p class="video-stats">1k views &#183; 2hours ago</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                    <img class="thumbnail" src="thumbnails/thumbnail(2).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(2).jpg" />
+
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(2).jpg"  />
+                        <div class="info">
+                            <p class="author-info">Sunday night</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/zxTEbcycur4" target="_parent">
+                        <p class="video-title">Lana Del Rey Playlist #6</p>
+                    </a>
+                    <p class="video-author">Sunday night</p>
+                    <p class="video-stats">6M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720.webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channel_profile(1).jpg"/>
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channel_profile(1).jpg"  />
+                        <div class="info">
+                            <p class="author-info">Ghilbli Music</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/-Zk7Y-8mf6Q" target="_parent">
+                        <p class="video-title">2 Hours Of Ghibli Music Learning &#128276;Healing Ghibli Studio, BGM Relaxing Ghibli</p>
+                    </a>
+                    <p class="video-author">Ghilbli Music</p>
+                    <p class="video-stats">96K views &#183; 1 months ago</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(1).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels2_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels2_profile.jpg"   />
+                        <div class="info">
+                            <p class="author-info">1 Hour</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/ySVgwPOxoUM" target="_parent">
+                        <p class="video-title">The Weeknd,JENNIE &Lily Rose Depp-One Of The Girls(1 HOUR LOOP)Lyrics</p>
+                    </a>
+                    <p class="video-author">1 Hour</p>
+                    <p class="video-stats">270K views &#183; 1 month ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(3).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/unnamed.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/unnamed.jpg"  />
+                        <div class="info">
+                            <p class="author-info">SuperSimpleDev</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/G3e-cpL7ofc" target="_parent">
+                        <p class="video-title">JavaScrip Full Course ( 2023 )- Beginner to Pro-Part 1</p>
+                    </a>
+                    <p class="video-author"> SuperSimpleDev </p>
+                    <p class="video-stats">1.5M views &#183; 4 months ago </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview" >
+            <div class="thumbnail-row">
+                <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                    <img class="thumbnail" src="thumbnails/hq720(2).webp" />
+                </a>
+                <p class="video-time">14:20</p>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="chanel-picture">
+                    <img class="profile-picture" src="channel-picture/channels1_profile.jpg" />
+                    <div class="tooltip-info">
+                        <img class="profile-picture-tooltip" src="channel-picture/channels1_profile.jpg"  />
+                        <div class="info">
+                            <p class="author-info">SakdaMCU</p>
+                            <p >15M subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <a href="https://youtu.be/e_joDpYw4BQ" target="_parent">
+                        <p class="video-title">ក្មេងប្រុសបណ្ដាសារ " YUJI ITADORI" | JUJUTSU KAISEN | SATORU GOJO | RYOMEN SUKUNA | សម្រាយសាច់រឿង</p>
+                    </a>
+                    <p class="video-author">SakdaMCU</p>
+                    <p class="video-stats">22k views &#183; 1 day ago</p>
+                </div>
+            </div>
+        </div>
+</section>
+</main>
 
 </body>
 </html>

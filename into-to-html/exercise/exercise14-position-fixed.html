@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/de06db78d4.js"
+            crossorigin="anonymous"></script>
+    <title>lesson14</title>
+</head>
+<body style="height: 3000px">
+
+
+<p> For these exercises , set the < Body > height to 3000px, so you can scroll   </p>
+
+<p> 14a. Create an element that sticks to the page when scrolling (20px from the
+    bottom and 20px from the right) </p>
+<!--<div style="background-color: #1ea931;-->
+<!--            position: fixed;-->
+<!--            right: 20px;-->
+<!--            bottom: 20px;">-->
+<!--            side bar</div>-->
+
+
+<p> 14b. Create a sidebar on the right side of the page , width=100px</p>
+<!--<div style="background-color: #1ea931;-->
+<!--            position: fixed;-->
+<!--            right: 0;height: 3000px;-->
+<!--            width: 100px;color: white">-->
+<!--    right side bar</div>-->
+
+
+<p>14c. Create an element that covers the entire page
+    <mark style="background-color: white;color: grey">(0px on all sides)</mark>
+    and has background-color black</p>
+<!--<div style="background-color: black;-->
+<!--            position: fixed;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            right: 0;-->
+<!--            bottom: 0"></div>-->
+
+
+<p> 14d. We'll create a model </p>
+    <li>start from exercise 14b.</li>
+    <li>create an element that covers the entire page,with background-color: rgba(0,0,0,0.8);
+        <mark style="color: grey;background-color: white">(this is called an overlay)</mark></li>
+    <li>make the overly a flexbox and center its contents horizontally and vertically </li>
+    <li>add a < Div> in the overlay and create the modal </li>
+<!--<div style="position: fixed;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            right: 0;-->
+<!--            bottom: 0;-->
+<!--            background-color: rgba(0,0,0,0.8);-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;">-->
+<!--        <div style="background-color: white;-->
+<!--                    font:message-box;-->
+<!--                    position: fixed;-->
+<!--                    align-items: center;-->
+<!--                    border: none;-->
+<!--                    border-radius: 5px;-->
+<!--                    padding: 15px;-->
+<!--                    line-height: 13px;-->
+<!--                    width: 275px ">-->
+<!--                <strong style="font-size: 19px">Modal Title</strong>-->
+<!--                <p style="font-size: 15px">This is a model</p>-->
+<!--                <button>Close</button>-->
+<!--        </div>-->
+<!--</div>-->
+
+<p>14e. Use a combination of position:fixed and flexbox to create this header form
+    Facebook and stick it to the top of the page<mark style="background-color: white;
+    color: grey"> (feel free to use a different image/name)</mark></p>
+<!--<div style="display: flex;background-color: white;-->
+<!--            flex-direction: row;-->
+<!--            align-items: center;-->
+<!--            justify-content: space-between;-->
+<!--            height: 60px;-->
+<!--            padding-left: 50px;-->
+<!--            padding-right: 50px;-->
+<!--            position: fixed;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            right: 0">-->
+<!--    <div style="display: flex;align-items: center;">-->
+<!--        <img style="height: 40px;-->
+<!--                    width: 40px;-->
+<!--                    border-radius: 50% ;" src="download (1).jpg" />-->
+<!--        <strong style="font-family:Arial,sans,serif;-->
+<!--                       margin-left:10px;"> Oliver Cat </strong></div>-->
+<!--    <div>-->
+<!--        <button style="padding: 7px;-->
+<!--                       width: 95px;-->
+<!--                       font-weight: bold;-->
+<!--                       border-radius: 5px;-->
+<!--                       border: none;-->
+<!--                       background-color:#1f6ed7;-->
+<!--                       color: white"> Add Friend </button>-->
+<!--        <button style="padding: 7px;-->
+<!--                       width: 90px;-->
+<!--                       font-weight: bold;-->
+<!--                       border-radius: 5px;-->
+<!--                       border: none;-->
+<!--                       background-color:#d3d3d3;-->
+<!--                       color: #000000"> Message </button>-->
+<!--    </div></div>-->
+
+
+<p>14f. Create the double-sidebar from Discord using a combination of position:fixed and flexbox</p>
+<li>stick it to the left side of the page </li>
+<li>feel free to use different images</li>
+<!--<div style="background-color: lightpink;-->
+<!--            display: flex;-->
+<!--            flex-direction: row ;-->
+<!--            position: fixed ;-->
+<!--            top:0;-->
+<!--            left: 0;bottom: 0 ">-->
+<!--    <div style="background-color:#8f8484;-->
+<!--                display: flex;-->
+<!--                flex-direction: column;-->
+<!--                padding-right:15px;-->
+<!--                padding-left: 15px;-->
+<!--                padding-top: 18px">-->
+<!--        <img style="height: 50px;-->
+<!--                    width: 50px;-->
+<!--                    border: none;-->
+<!--                    border-radius: 50%;-->
+<!--                    margin-bottom: 5px;-->
+<!--                 " src="download (1).jpg"/>-->
+<!--        <img style="height: 50px;margin-bottom: 5px;-->
+<!--                    width: 50px;-->
+<!--                    border: none;-->
+<!--                    border-radius: 50%-->
+<!--                 " src="download.jpg"/>-->
+<!--        <img style="height: 50px;-->
+<!--                    width: 50px;-->
+<!--                    border: none;-->
+<!--                    border-radius: 50%;-->
+<!--                 " src="download (3).jpg" /> </div>-->
+<!--    <div style="display: flex;-->
+<!--                flex-direction: column;-->
+<!--                background-color: #919090;-->
+<!--                width: 200px;-->
+<!--                padding-left: 20px;-->
+<!--                padding-right: 20px;-->
+<!--                padding-top: 10px;-->
+<!--                font-family: Arial, fantasy;-->
+<!--                font-size: 15px;-->
+<!--                color: #e5e5e5;line-height: 7px" >-->
+<!--            <div style="display: flex;-->
+<!--                        flex-direction: row;-->
+<!--                        align-items: center;-->
+<!--                        justify-content: space-between;-->
+<!--                        font-weight: bold;-->
+<!--                        color: white;">-->
+<!--                <p >INFO</p>-->
+<!--                <i class="fa-solid fa-plus"></i> -->
+<!--            </div>-->
+<!--            <p># new-videos</p>-->
+<!--            <p># updates </p>-->
+<!--            <p># faq</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+</body>
+</html>
