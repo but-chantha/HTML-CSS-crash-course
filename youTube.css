@@ -238,7 +238,7 @@
     padding-left: 23px;
 }
 
-@media (min-width: 700px) and (max-width: 1050px ) {
+@media (max-width: 1050px ) {
     .video-grid{
         grid-template-columns: 1fr 1fr ;
     }
