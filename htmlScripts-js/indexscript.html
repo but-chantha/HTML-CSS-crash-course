@@ -9,13 +9,121 @@
 </head>
 <body>
 
+<!-- 00 -> Clock -->
 <h1>My First JavaScript</h1>
 
 <button type="button"
-        onclick="document.getElementById('demo').innerHTML = Date()">
+        onclick="document.getElementById('demo-00').innerHTML = Date()">
     Click me to display Date and Time.</button>
 
-<p id="demo"></p>
+<p id="demo-00"></p>
+
+
+<!-- 01 -> Adding paragraph into HTML element
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+-->
+<p id="demo-01"></p>
+
+<script>
+    document.getElementById("demo-01").innerHTML = "Hello JavaScript!";
+</script>
+
+
+<!-- 02 -> Change the content -->
+<h1>My First JavaScript</h1>
+<p>JavaScript can change the content of an HTML element:</p>
+
+<p id="demo-02">This is a demonstration.</p>
+
+<button  type="button" onclick="myFunction()">Click Me!</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo-02").innerHTML = "Hello JavaScript!";
+    }
+</script>
+
+
+<!-- 03 -> change color of paragraph -->
+<h1>My First JS</h1>
+<p id="demo-03"> JS can change the style of an HTML element.</p>
+
+<button type="button" onclick="myFunction()">Click ME!</button>
+
+<script>
+    function myFunction()
+    {
+        document.getElementById("demo-03").style.fontSize = "25px";
+        document.getElementById("demo-03").style.color= "red";
+        document.getElementById("demo-03").style.backgroundColor= "yellow";
+    }
+</script>
+
+
+<!-- 04 -> change image ( turn on and turn off the light -->
+
+<p>Here a Javascript changes the value of an image.</p>
+
+<script>
+    function light(sw)
+    {
+        var pic;
+        if (sw == 0)
+        {
+            pic = "pic_bulboff.gif"
+        }
+        else {
+            pic = " pic_boldon.gif"
+        }
+        document.getElementById('myImage').src =pic;
+    }
+</script>
+
+<img src="pic">
+
+<!-- 05 ->  -->
+
+
+<!-- 06 ->  -->
+
+
+<!-- 07 ->  -->
+
+
+<!-- 08 ->  -->
+
+
+<!-- 09 ->  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
