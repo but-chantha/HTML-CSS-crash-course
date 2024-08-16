@@ -244,12 +244,11 @@
     }
 }
 
-@media (min-width: 1051px) and (max-width: 1499px){
-    .video-grid{
+@media (min-width: 1051px) and (max-width: 1499px) {
+    .video-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 @media (min-width: 1500px){
     .video-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
