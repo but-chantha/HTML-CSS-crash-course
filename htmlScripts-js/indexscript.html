@@ -17,7 +17,7 @@
     Click me to display Date and Time.</button>
 
 <p id="demo-00"></p>
-
+<hr>
 
 <!-- 01 -> Adding paragraph into HTML element
 <h2>Use JavaScript to Change Text</h2>
@@ -43,7 +43,7 @@
         document.getElementById("demo-02").innerHTML = "Hello JavaScript!";
     }
 </script>
-
+<hr>
 
 <!-- 03 -> change color of paragraph -->
 <h1>My First JS</h1>
@@ -59,11 +59,10 @@
         document.getElementById("demo-03").style.backgroundColor= "yellow";
     }
 </script>
-
+<hr>
 
 <!-- 04 -> change image ( turn on and turn off the light -->
-
-<p>Here a Javascript changes the value of an image.</p>
+<p>Here a Javascript changes the value of the src (source) attribute of an image.</p>
 
 <script>
     function light(sw)
@@ -71,16 +70,23 @@
         var pic;
         if (sw == 0)
         {
-            pic = "pic_bulboff.gif"
+            pic = "images/pic_bulboff.png"
         }
-        else {
-            pic = " pic_boldon.gif"
+        else
+        {
+            pic = "images/pic_bulbon.png"
         }
-        document.getElementById('myImage').src =pic;
+        document.getElementById('myImage').src = pic ;
     }
 </script>
 
-<img src="pic">
+<img id="myImage" src="images/pic_bulboff.png" width="100" height="180">
+<p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light off</button>
+</p>
+<hr>
+
 
 <!-- 05 ->  -->
 
