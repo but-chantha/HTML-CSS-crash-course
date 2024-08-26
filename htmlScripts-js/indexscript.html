@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <!-- 00 -> Clock -->
 <h1>My First JavaScript</h1>
 
@@ -18,6 +19,7 @@
 
 <p id="demo-00"></p>
 <hr>
+
 
 <!-- 01 -> Adding paragraph into HTML element
 <h2>Use JavaScript to Change Text</h2>
@@ -37,7 +39,6 @@
 <p id="demo-02">This is a demonstration.</p>
 
 <button  type="button" onclick="myFunction()">Click Me!</button>
-
 <script>
     function myFunction() {
         document.getElementById("demo-02").innerHTML = "Hello JavaScript!";
@@ -45,12 +46,12 @@
 </script>
 <hr>
 
+
 <!-- 03 -> change color of paragraph -->
 <h1>My First JS</h1>
 <p id="demo-03"> JS can change the style of an HTML element.</p>
 
 <button type="button" onclick="myFunction()">Click ME!</button>
-
 <script>
     function myFunction()
     {
@@ -61,9 +62,9 @@
 </script>
 <hr>
 
-<!-- 04 -> change image ( turn on and turn off the light -->
-<p>Here a Javascript changes the value of the src (source) attribute of an image.</p>
 
+<!-- 04 -> change attribute ( switch buttons ) -->
+<p>Here a Javascript changes the value of the src (source) attribute of an image.</p>
 <script>
     function light(sw)
     {
@@ -79,7 +80,6 @@
         document.getElementById('myImage').src = pic ;
     }
 </script>
-
 <img id="myImage" src="images/pic_bulboff.png" width="100" height="180">
 <p>
     <button type="button" onclick="light(1)">Light On</button>
@@ -88,16 +88,33 @@
 <hr>
 
 
-<!-- 05 ->  -->
+<!-- 05 -> NoScript -->
+<p id="demo-05"></p>
+
+<script>
+    document.getElementById("demo_05).innerHTML= "Hello JavaScript!";
+</script>
+<noscript>
+    Sorry, your browser does not support JavaScript!
+</noscript>
+
+<p>A browser without support for JavaScript will show the text written
+    inside the noscript element.</p>
 
 
-<!-- 06 ->  -->
+<!-- 06 ->file path  -->
+<h2>Using a Full URL File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"
+     style="width:300px">
 
 
-<!-- 07 ->  -->
+<!-- 07 -> relative file paths -->
+<h2>Using a Relative File Path</h2>
+<img src="images/picture.png" alt="Mountain" style="width:300px">
 
 
-<!-- 08 ->  -->
+<!-- 08 ->  absolute file path-->
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
 
 
 <!-- 09 ->  -->
